@@ -2,8 +2,9 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 import numpy as np
 import spacy
+import PIL
 
-model = tf.keras.models.load_model('image_classifier_32x32.h5')
+model = tf.keras.models.load_model('fine_tuned_image_classifier_32x32.h5')
 
 animal_classes = ["SEAL", "DOLPHIN", "WHALE", "SHARK", "WOLF", "TIGER", "BEAR", "ELEPHANT", "RACOON", "SPIDER"]
 
